@@ -1,10 +1,9 @@
-# Using the numpy (numerical python) library
+''' Our first simple plot'''
 import numpy as np
-mydata = np.loadtxt('data.txt')
-# We use this magic function (%) to allow us to plot inline in this ipython notebook
-%matplotlib inline
 import matplotlib.pyplot as plt
+
+mydata = np.loadtxt('data.txt')
 x=mydata[:,0]
 y=mydata[:,1]
-plt.plot(x,y)
-line = plt.plot(x,y,'m+')
+line = plt.plot(x,y,'cp', label='line1', linewidth=3)
+plt.show()
