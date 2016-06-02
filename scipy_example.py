@@ -25,3 +25,4 @@ plt.plot(xdata, y, 'g')
 plt.plot(xdata, ydata, 'c', marker='p')
 # best fit y data to the perturbed data
 plt.plot(xdata, func(xdata,popt[0],popt[1],popt[2]), 'r', marker='o')
+plt.show()
